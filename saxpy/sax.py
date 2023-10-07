@@ -22,8 +22,8 @@ def get_sax_list(series, cuts):
     for i in range(series.shape[0]):
         multidim_sax = []
 
-        for j in range(series.shape[1]):
-            num = series[i][j]
+        for k in range(series.shape[1]):
+            num = series[i][k]
 
             # If the number is below 0, start from the bottom, otherwise from the top
             if num >= 0:
